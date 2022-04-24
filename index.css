@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #054f74;
+  --secondary-color: #ac8d54;
+  --light-color: #ac8d54;
+  --dark-color: #333;
+}
+
+/* ! Utility */
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none !important;
+  font-size: 1.1rem;
+}
+
+.footer {
+  color: var(--secondary-color) !important;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: var(--ligh-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--ligh-color);
+}
+.bg-icons {
+  color: var(--dark-color);
+}
+
+.container-inner {
+  background-color: var(--primary-color);
+}
+
+.btn {
+  background: var(--secondary-color);
+  border: var(--secondary-color);
+}
+
+.btn:hover {
+  background: var(--secondary-color) !important;
+  opacity: 0.8;
+}
+
+.title-h1 {
+  font-family: "Times New Roman";
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.title-h2 {
+  font-family: "Times New Roman";
+  font-size: 2.5rem;
+}
+
+.title-h2-secondary {
+  font-family: "Times New Roman";
+  font-size: 3rem;
+  font-style: italic;
+}
+
+/* ! Junta colores y deseño de letras */
+h7 span {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+/* ! Navbar */
+.container-inner {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+.dropdown-menu {
+  background-color: var(--dark-color);
+  opacity: 0.9;
+}
+
+.dropdown-item {
+  color: var(--secondary-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(172, 141, 84)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: var(--dark-color);
+}
+/* ! Footer */
+#title-footer {
+  color: var(--secondary-color);
+}
+
+h6 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+h6 span {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.menu li {
+  list-style: none;
+  border-bottom: solid 1px var(--dark-color);
+  width: 65%;
+  padding: 0.5rem 0;
+}
+
+.copyright {
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 576px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .title-h2 {
+    font-family: "Times New Roman";
+    font-size: 2.3rem;
+  }
+
+  .title-h2-secondary {
+    font-family: "Times New Roman";
+    font-size: 1.9rem;
+    font-style: italic;
+  }
+
+  .junta {
+    font-family: "Times New Roman";
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .marginMobile {
+    margin-left: 0;
+    margin-left: 20px;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+  }
+}
